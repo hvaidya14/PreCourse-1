@@ -51,10 +51,25 @@ class Stack {
 class Main { 
     public static void main(String args[]) 
     { 
-        Stack s = new Stack(); 
-        s.push(10); 
-        s.push(20); 
-        s.push(30); 
-        System.out.println(s.pop() + " Popped from stack"); 
+        Stack s = new Stack();
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        System.out.println(s.top);
+        System.out.println(s.isEmpty());
+        System.out.println(s.peek());
+        System.out.println(Arrays.toString(s.a));
+        System.out.println(s.pop() + " Popped from stack");
+        System.out.println(s.pop() + " Popped from stack");
+        s.push(40);
+        s.push(50);
+        System.out.println(s.top);
+        System.out.println(s.isEmpty());
+        System.out.println(s.peek());
+        System.out.println(Arrays.toString(s.a));
+        System.out.println(s.pop() + " Popped from stack");
+        System.out.println(s.pop() + " Popped from stack");
+        System.out.println(s.pop() + " Popped from stack");
+        System.out.println(s.isEmpty());
     } 
 }
