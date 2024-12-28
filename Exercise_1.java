@@ -7,7 +7,7 @@ class Stack {
   
     boolean isEmpty() 
     { 
-        if (a[0] == 0) {
+        if (top == -1) {
             return true;
         }
         return false;
@@ -34,7 +34,6 @@ class Stack {
     {
         if (top != -1) {
             int data = a[top];
-            a[top] =0;
             top--;
             return data;
         }
